@@ -1,0 +1,49 @@
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~$ mkdir hello				
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~$ cd hello					
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ mkdir five				
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ cd five				
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five$ mkdir six			
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five$ cd six				
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six$ touch c.txt
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six$ mkdir seven
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six$ cd seven
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six/seven$ touch error.log
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six/seven$ cd ~/hello
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ mkdir one
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ cd one
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one$ touch a.txt
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one$ touch b.txt
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one$ mkdir two
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one$ cd two
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two$ touch d.txt
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two$ mkdir three
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two$ cd three
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two/three$ touch e.txt
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two/three$ mkdir four
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two/three$ cd four
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two/three/four$ touch access.log       		//Created the given directory structure.
+
+
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ cd ~/hello/five/six/seven                 		//Moved to the directory containing file with .log extension
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six/seven$ rm error.log		     		//Deleted the file error.log
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/five/six/seven$ cd ~/hello/one/two/three/four		//Moved to the next directory containing file with .log extension
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two/three/four$ rm access.log			//Deleted the file access.log
+
+
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one/two/three/four$ cd ~/hello/one			//Moved to the directory containing the file a.txt
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one$ nano a.txt					//Opened text file in the nano editor and entered the given text.
+
+
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/one$ cd ~/hello					//Moved to the directory containing five.
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ rm -r five						//Deleted the directory named five.
+
+
+
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello$ mv one uno						//Renamed the one directory to uno.
+
+		
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/hello/uno$ mv a.txt two/					//Moved a.txt to the two directory
+
+
+
+

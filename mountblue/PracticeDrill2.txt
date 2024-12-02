@@ -1,0 +1,34 @@
+1.alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ wget -O - "https://raw.githubusercontent.com/bobdeng/owlreader/master/ERead/assets/books/Harry%20Potter%20and%20the%20Goblet%20of%20Fire.txt">BOOK    //Downloads the file from the url and saves it in the new file named BOOK.
+
+
+2.alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ head -n 3 BOOK
+Harry Potter and the Goblet of Fire
+　　By J.K. Rowling					//Uses the head command to print the first 3 lines of file
+
+3.alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ tail -n 10 BOOK
+　　and Goyle, who were still lying on the floor, covered in hex marks.
+　　Uncle Vernon was waiting beyond the barrier. Mrs. Weasley was close by him. She hugged Harry very tightly when she saw him and whispered in his ear, "I think Dumbledore will let you come to us later in the summer. Keep in touch, Harry."
+　　"See you. Harry," said Ron, clapping him on the back.
+　　"'Bye, Harry!" said Hermione, and she did something she had never done before, and kissed him on the cheek.
+　　"Harry - thanks," George muttered, while Fred nodded fervently at his side.
+　　Harry winked at them, turned to Uncle Vernon, and followed him silently from the station.
+　　There was no point worrying yet, he told himself, as he got into the back of the Dursleys' car.
+　　As Hagrid had said, what would come, would come ... and he would have to meet it when it did. 
+您下载的文件来自http://txt.nokiacn.net糯米社区为你制作
+【糯米社区-TXT论坛】-立志要做最新最全的txt文本格式电子书下载论坛!		//Uses the tail command to print the last 10 lines of file
+
+
+4.
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ grep -c Harry BOOK  
+2591
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ grep -c Ron BOOK
+947
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ grep -c Hermione BOOK
+822
+alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ grep -c Dumbledore BOOK
+507
+5.alphons@alphons-Lenovo-IdeaPad-S145-15IIL:~/Desktop/SAMPLE$ cat BOOK|tr -s " " "\n"|tr "A-Z" "a-z"|sort|uniq|wc -w
+21303				//All spaces are converted into newlines, then all uppercase characters are changed to lowercase, then the words are sorted, duplicates are removed, and the number of unique words is counted.
+
+
+
